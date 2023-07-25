@@ -1,0 +1,1 @@
+This is the chess game with Guardians of the Galaxy theme that is built using Qt Creator and C++. To compile the project, make sure you have your Qt Creator downloaded. Open the Qt creator and click on Open Project. Then, select the CHESS_GUI Qt Project file of this directory. Once you open the file, the code, UI of this chess project can be edited in your Qt creator.

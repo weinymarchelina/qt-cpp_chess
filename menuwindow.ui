@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuWindow</class>
+ <widget class="QMainWindow" name="MenuWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MenuWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-20</y>
+      <width>811</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QPushButton" name="startGameButton">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>290</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid white;
+}
+
+QPushButton:hover {
+	color: gold;
+    text-transform: uppercase;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 2px solid gold;
+}</string>
+      </property>
+      <property name="text">
+       <string>START GAME</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mainTitleImage">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>40</y>
+        <width>431</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Resources.qrc">:/images/images/main_title.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>350</y>
+        <width>199</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="customContainer">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="padding1">
+           <property name="styleSheet">
+            <string notr="true">background: none;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="whosFirstLabel">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background: none;
+text-transform: uppercase;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Select Who's First</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="chooseWhiteFirstButton">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	color: white;
+    text-transform: uppercase;
+    padding: 7px 0px;
+	margin-top: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid white;
+}
+
+QPushButton:hover {
+	color: gold;
+    text-transform: uppercase;
+	margin-top: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 2px solid gold;
+}</string>
+           </property>
+           <property name="text">
+            <string>Guardians (White)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="chooseBlackFirstButton">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	color: white;
+    text-transform: uppercase;
+    padding: 7px 0px;
+	margin-top: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid white;
+}
+
+QPushButton:hover {
+	color: gold;
+    text-transform: uppercase;
+	margin-top: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 2px solid gold;
+}</string>
+           </property>
+           <property name="text">
+            <string>Villain (Black)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="backgroundColor">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>9</y>
+        <width>851</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 rgba(6,2,68,1),
+                                stop: 0.71 rgba(59,9,121,1),
+                                stop: 1 rgba(124,66,21,1));</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="right_img">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>180</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Resources.qrc">:/images/images/right_bg.PNG</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="left_img">
+      <property name="geometry">
+       <rect>
+        <x>-70</x>
+        <y>180</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Resources.qrc">:/images/images/left_bg.PNG</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="up_img">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>-40</y>
+        <width>801</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Resources.qrc">:/images/images/up_bg.PNG</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>backgroundColor</zorder>
+     <zorder>right_img</zorder>
+     <zorder>left_img</zorder>
+     <zorder>up_img</zorder>
+     <zorder>mainTitleImage</zorder>
+     <zorder>verticalLayoutWidget</zorder>
+     <zorder>startGameButton</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuMusic">
+    <property name="title">
+     <string>Music</string>
+    </property>
+    <addaction name="actionPrevious_Music"/>
+    <addaction name="actionNext_Songs"/>
+    <addaction name="actionTurn_On_Music"/>
+    <addaction name="actionTurn_Off"/>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuMusic"/>
+  </widget>
+  <action name="actionMusic">
+   <property name="text">
+    <string> Music Choice</string>
+   </property>
+  </action>
+  <action name="actionSound_Volume">
+   <property name="text">
+    <string>Sound Volume</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionNext_Songs">
+   <property name="text">
+    <string>Next Music</string>
+   </property>
+  </action>
+  <action name="actionPrevious_Music">
+   <property name="text">
+    <string>Previous Music</string>
+   </property>
+  </action>
+  <action name="actionTurn_Off">
+   <property name="text">
+    <string>Turn Off Music</string>
+   </property>
+  </action>
+  <action name="actionTurn_On_Music">
+   <property name="text">
+    <string>Turn On Music</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

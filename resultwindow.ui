@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultWindow</class>
+ <widget class="QWidget" name="ResultWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="playAgainButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>380</y>
+     <width>171</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: white;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid white;
+}
+
+QPushButton:hover {
+	color: gold;
+    text-transform: uppercase;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 2px solid gold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Play Again</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundColor">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-20</y>
+     <width>851</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 rgba(6,2,68,1),
+                                stop: 0.71 rgba(59,9,121,1),
+                                stop: 1 rgba(124,66,21,1));</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>130</y>
+     <width>401</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="resultImage">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: gold;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid gold;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Resources.qrc">:/images/images/guardian_result.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="resultLabel">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: gold;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid gold;</string>
+      </property>
+      <property name="text">
+       <string>GUARDIANS
+WINS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>470</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: white;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 1px solid white;
+}
+
+QPushButton:hover {
+	color: gold;
+    text-transform: uppercase;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(4,1,46,1),
+    stop:0.85 rgba(45,7,93,1),
+    stop:1 rgba(80,5,80,1));
+	border: 2px solid gold;
+}</string>
+   </property>
+   <property name="text">
+    <string>EXIT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="resultTitle">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>60</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>FINAL RESULT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="up_img">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-50</y>
+     <width>861</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Resources.qrc">:/images/images/up_bg.PNG</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="decor_img">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>40</y>
+     <width>211</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Resources.qrc">:/images/images/walkman.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>backgroundColor</zorder>
+  <zorder>up_img</zorder>
+  <zorder>playAgainButton</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>exitButton</zorder>
+  <zorder>resultTitle</zorder>
+  <zorder>decor_img</zorder>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

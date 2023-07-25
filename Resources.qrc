@@ -1,0 +1,48 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/main_title.png</file>
+        <file>images/bishop.png</file>
+        <file>images/bishop1.png</file>
+        <file>images/knight.png</file>
+        <file>images/knight1.png</file>
+        <file>images/king.png</file>
+        <file>images/king1.png</file>
+        <file>images/pawn.png</file>
+        <file>images/pawn1.png</file>
+        <file>images/queen.png</file>
+        <file>images/queen1.png</file>
+        <file>images/rook.png</file>
+        <file>images/rook1.png</file>
+        <file>images/left_bg.PNG</file>
+        <file>images/up_bg.PNG</file>
+        <file>images/right_bg.PNG</file>
+        <file>images/sample45.png</file>
+        <file>images/sample50.png</file>
+        <file>images/walkman.png</file>
+        <file>images/guardian1_mark.png</file>
+        <file>images/guardian2_mark.png</file>
+        <file>images/villain1_mark.png</file>
+        <file>images/villain2_mark.png</file>
+        <file>images/gBishop.png</file>
+        <file>images/gKing.png</file>
+        <file>images/gQueen.png</file>
+        <file>images/vBishop.png</file>
+        <file>images/vKing.png</file>
+        <file>images/vKnight.png</file>
+        <file>images/vPawn.png</file>
+        <file>images/vQueen.png</file>
+        <file>images/vRook.png</file>
+        <file>images/gRook.png</file>
+        <file>images/gPawn.png</file>
+        <file>images/gKnight.png</file>
+        <file>images/villain_result.png</file>
+        <file>images/guardian_result.png</file>
+        <file>images/draw_result.jpg</file>
+        <file>images/draw_result.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>sound/bgmusic_3.mp3</file>
+        <file>sound/bgmusic_2.mp3</file>
+        <file>sound/bgmusic_1.mp3</file>
+    </qresource>
+</RCC>
